@@ -16,36 +16,6 @@
   <widget class="QWidget" name="centralWidget">
    <layout class="QHBoxLayout" name="horizontalLayout">
     <item>
-     <widget class="QWidget" name="widget" native="true">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="minimumSize">
-       <size>
-        <width>200</width>
-        <height>0</height>
-       </size>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>200</width>
-        <height>16777215</height>
-       </size>
-      </property>
-      <layout class="QVBoxLayout" name="verticalLayout">
-       <item>
-        <widget class="QListWidget" name="surfaceListWidget"/>
-       </item>
-       <item>
-        <widget class="QListWidget" name="lightListWidget"/>
-       </item>
-      </layout>
-     </widget>
-    </item>
-    <item>
      <widget class="QGraphicsView" name="graphicsView"/>
     </item>
    </layout>
