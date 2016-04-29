@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>749</width>
+    <height>478</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QWidget" name="widget" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>200</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>200</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QListWidget" name="surfaceListWidget"/>
+       </item>
+       <item>
+        <widget class="QListWidget" name="lightListWidget"/>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGraphicsView" name="graphicsView"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>749</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuScene">
+    <property name="title">
+     <string>Scene</string>
+    </property>
+    <addaction name="actionNew_Scene"/>
+    <addaction name="actionNew_Scene_From_File"/>
+    <addaction name="separator"/>
+    <addaction name="actionSave_Scene_Image"/>
+   </widget>
+   <widget class="QMenu" name="menuCreate">
+    <property name="title">
+     <string>Create</string>
+    </property>
+    <addaction name="actionNew_Sphere"/>
+    <addaction name="actionNew_Triangle"/>
+    <addaction name="separator"/>
+    <addaction name="actionNew_Ambient_Light"/>
+    <addaction name="actionNew_Area_Light"/>
+    <addaction name="actionNew_Point_Light"/>
+   </widget>
+   <widget class="QMenu" name="menuConfig">
+    <property name="title">
+     <string>Config</string>
+    </property>
+    <addaction name="actionCamera_Configuration"/>
+   </widget>
+   <addaction name="menuScene"/>
+   <addaction name="menuCreate"/>
+   <addaction name="menuConfig"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionNew_Scene">
+   <property name="text">
+    <string>New Scene</string>
+   </property>
+  </action>
+  <action name="actionNew_Scene_From_File">
+   <property name="text">
+    <string>New Scene From File</string>
+   </property>
+  </action>
+  <action name="actionNew_Sphere">
+   <property name="text">
+    <string>New Sphere</string>
+   </property>
+  </action>
+  <action name="actionNew_Triangle">
+   <property name="text">
+    <string>New Triangle</string>
+   </property>
+  </action>
+  <action name="actionNew_Ambient_Light">
+   <property name="text">
+    <string>New Ambient Light</string>
+   </property>
+  </action>
+  <action name="actionNew_Area_Light">
+   <property name="text">
+    <string>New Area Light</string>
+   </property>
+  </action>
+  <action name="actionNew_Point_Light">
+   <property name="text">
+    <string>New Point Light</string>
+   </property>
+  </action>
+  <action name="actionCamera_Configuration">
+   <property name="text">
+    <string>Camera Configuration</string>
+   </property>
+  </action>
+  <action name="actionSave_Scene_Image">
+   <property name="text">
+    <string>Save Scene Image</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
